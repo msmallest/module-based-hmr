@@ -7,7 +7,6 @@ import { importProvidersFrom } from '@angular/core';
 bootstrapApplication(AppComponent, {
     providers: [
         importProvidersFrom(BrowserModule, FormsModule, ReactiveFormsModule),
-        provideAnimationsAsync()
     ]
 })
   .catch(err => console.error(err));

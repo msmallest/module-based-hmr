@@ -13,7 +13,7 @@ import { NgFor, AsyncPipe } from '@angular/common';
   // `,
   styles: `
     p {
-      color: green
+      color: red
     }
   `,
 })
