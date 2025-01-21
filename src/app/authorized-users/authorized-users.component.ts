@@ -6,16 +6,16 @@ import { NgFor, AsyncPipe } from '@angular/common';
 @Component({
   selector: 'app-authorized-users',
   templateUrl: './authorized-users.component.html',
-  styleUrl: './authorized-users.component.css',
+  // styleUrl: './authorized-users.component.css',
   // template: `
   //   <p>Error with ngFor</p>
   //   <p>Error with async pipe</p>
   // `,
-  // styles: `
-  //   p {
-  //     color: red
-  //   }
-  // `,
+  styles: `
+    p {
+      color: green
+    }
+  `,
 })
 export class AuthorizedUsersComponent {
   options$ = of([1, 2, 3]);

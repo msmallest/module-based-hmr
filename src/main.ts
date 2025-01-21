@@ -1,7 +1,13 @@
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-import { AppModule } from './app/app.module';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { BrowserModule, bootstrapApplication } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AppComponent } from './app/app.component';
+import { importProvidersFrom } from '@angular/core';
 
-platformBrowserDynamic().bootstrapModule(AppModule, {
-  ngZoneEventCoalescing: true,
+bootstrapApplication(AppComponent, {
+    providers: [
+        importProvidersFrom(BrowserModule, FormsModule, ReactiveFormsModule),
+        provideAnimationsAsync()
+    ]
 })
   .catch(err => console.error(err));

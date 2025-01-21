@@ -6,19 +6,6 @@ Bumped to latest patch versions.
 
 ## Module root but standalone component (style issues)
 
-When styles of a component declared in a module are changed (inline style or file-based style), changes are not applied with HMR until reloading. But when ran with `hmr --false`, this is not an issue.
+For some reason, there is still HMR issues in what I think at this point is not module based at all.
 
-How this branch was generated
-
-```bash
->19:31/redacted/module-based-hmr ~ $ ng generate @angular/core:standalone
-✔ Choose the type of migration: Convert all components, directives and pipes to standalone
-✔ Which path in your project should be migrated? ./
-    🎉 Automated migration step has finished! 🎉
-    IMPORTANT! Please verify manually that your application builds and behaves as expected.
-    See https://angular.dev/reference/migrations/standalone for more information.
-UPDATE src/app/authorized-users/authorized-users.component.ts (476 bytes)
-UPDATE src/app/app.module.ts (768 bytes)
-UPDATE src/app/app.component.spec.ts (1047 bytes)
-UPDATE src/app/authorized-users/authorized-users.component.spec.ts (650 bytes)
-```
+This branch got the full root standalone treatment, and stuff like routing (which wasn't in use) even had its module removed. Still an issue.
