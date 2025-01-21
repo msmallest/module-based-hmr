@@ -26,6 +26,8 @@ Two things of note
 1. These errors are on the first save. However, if you add some more characters and keep saving, the links to the source files no longer go to the source files and instead go to the `@ng` output files
 2. When these errors happen (either the kind with source files directly or `@ng` files, the content in the `*ngFor/async` go away.)
 
+`ngForOf` error
+
 ```
 authorized-users.component.ts:34 NG0303: Can't bind to 'ngForOf' since it isn't a known property of 'ng-container' (used in the '_AuthorizedUsersComponent' component template).
 1. If 'ng-container' is an Angular component and it has the 'ngForOf' input, then verify that it is a part of an @NgModule where this component is declared.
@@ -44,17 +46,18 @@ onMessage	@	client:298
 (anonymous)	@	client:428
 ```
 
+`pure` error from async pipe
 ```
 authorized-users.component.ts:12 ERROR TypeError: Cannot read properties of null (reading 'pure')
- TypeError: Cannot read properties of null (reading 'pure')
-    at isPure (core.mjs:32410:35)
-    at Module.ɵɵpipeBind1 (core.mjs:32329:10)
     at AuthorizedUsersComponent_Template (authorized-users.component.ts:36:43)
-    at executeTemplate (core.mjs:12061:5)
-    at refreshView (core.mjs:14431:7)
-    at detectChangesInView (core.mjs:14640:5)
-    at detectChangesInViewIfAttached (core.mjs:14602:3)
-    at detectChangesInComponent (core.mjs:14591:3)
-    at detectChangesInChildComponents (core.mjs:14653:5)
-    at refreshView (core.mjs:14484:7)
+(anonymous)	@	authorized-users.component.ts:12
+Promise.then		
+AuthorizedUsersComponent_HmrLoad	@	authorized-users.component.ts:12
+(anonymous)	@	authorized-users.component.ts:12
+(anonymous)	@	client:129
+notifyListeners	@	client:129
+notifyListeners	@	client:959
+handleMessage	@	client:904
+onMessage	@	client:298
+(anonymous)	@	client:428
 ```
