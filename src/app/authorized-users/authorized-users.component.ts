@@ -9,14 +9,7 @@ import { map, Observable, of, startWith } from 'rxjs';
   styleUrl: './authorized-users.component.css',
   // template: `
   //   <p>Error with ngFor</p>
-  //   <ng-container *ngFor="let option of options">
-  //     <div>{{ option }}</div>
-  //   </ng-container>
-
   //   <p>Error with async pipe</p>
-  //   <ng-container *ngFor="let option of options$ | async">
-  //     <div>{{ option }}</div>
-  //   </ng-container>
   // `,
   // styles: `
   //   p {
