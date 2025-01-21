@@ -1,14 +1,12 @@
-# Module Based Hmr Errors
+# Module Based Hmr Styles not applied
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.1, with the command `ng new module-based-hmr --standalone false`
 
 Bumped to latest patch versions.
 
-## Module root but standalone component (no errors)
+## Module root but standalone component (style issues)
 
-Compared to the branch with errors in components contained in modules, there is no difference whether the app is served with or without HMR in relation to the errors. 
-
-However, there is an issue with inline styles silently not changing until a refresh.
+When styles of a component declared in a module are changed (inline style or file-based style), changes are not applied with HMR until reloading. But when ran with `hmr --false`, this is not an issue.
 
 How this branch was generated
 
