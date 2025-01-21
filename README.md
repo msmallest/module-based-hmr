@@ -10,7 +10,7 @@ Run `ng serve --hmr=false` HMR enabled by default
 
 1. Run `ng-serve` 
 2. Observe that the app is fine and clear of errors
-3. Add something to the template of `authorized-users.component.html`, like the character "e" to line 5
+3. Add something to the template of `authorized-users.component.html`, like the character "e" to line 5. Alternatively, change a style.
 4. No errors
 
 
