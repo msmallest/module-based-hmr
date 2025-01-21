@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { MaterialModule } from './material.module';
 import { AuthorizedUsersComponent } from './authorized-users/authorized-users.component';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -16,7 +15,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
         FormsModule,
         ReactiveFormsModule,
         AppRoutingModule,
-        MaterialModule,
         AuthorizedUsersComponent
     ],
     providers: [
