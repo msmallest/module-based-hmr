@@ -4,7 +4,7 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 
 Bumped to latest patch versions.
 
-## Module root but standalone component (style issues)
+## Full standalone after conversions (style issues)
 
 For some reason, there is still HMR issues in what I think at this point is not module based at all.
 
