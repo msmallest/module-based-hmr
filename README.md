@@ -6,7 +6,9 @@ Bumped to latest patch versions.
 
 ## Module root but standalone component (no errors)
 
-Compared to the branch with errors in components contained in modules, there is no difference whether the app is served with or without HMR.
+Compared to the branch with errors in components contained in modules, there is no difference whether the app is served with or without HMR in relation to the errors. 
+
+However, there is an issue with inline styles silently not changing until a refresh.
 
 How this branch was generated
 
