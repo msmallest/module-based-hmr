@@ -22,6 +22,10 @@ Run `ng-serve` (HMR enabled by default)
 4. Observe the following two errors
 5. Persists until refresh
 
+Two things of note
+1. These errors are on the first save. However, if you add some more characters and keep saving, the links to the source files no longer go to the source files and instead go to the `@ng` output files
+2. When these errors happen (either the kind with source files directly or `@ng` files, the content in the `*ngFor/async` go away.)
+
 ```
 authorized-users.component.ts:34 NG0303: Can't bind to 'ngForOf' since it isn't a known property of 'ng-container' (used in the '_AuthorizedUsersComponent' component template).
 1. If 'ng-container' is an Angular component and it has the 'ngForOf' input, then verify that it is a part of an @NgModule where this component is declared.
