@@ -18,13 +18,14 @@ Run `ng-serve` (HMR enabled by default)
 
 1. Run `ng-serve` 
 2. Observe that the app is fine and clear of errors
-3. Add something to the template of `authorized-users.component.html`, like the character "e" to line 5
+3. Add something to the template of `authorized-users.component.html`, like the character "e" to line 5. Alternatively, change a style.
 4. Observe the following two errors
 5. Persists until refresh
 
-Two things of note
-1. These errors are on the first save. However, if you add some more characters and keep saving, the links to the source files no longer go to the source files and instead go to the `@ng` output files
-2. When these errors happen (either the kind with source files directly or `@ng` files, the content in the `*ngFor/async` go away.)
+Three things of note
+1. These errors happen when saving an external template or external style. TODO - check inline ones next commit
+2. These errors are on the first save. However, if you add some more characters and keep saving, the links to the source files no longer go to the source files and instead go to the `@ng` output files
+3. When these errors happen (either the kind with source files directly or `@ng` files, the content in the `*ngFor/async` go away.)
 
 `ngForOf` error
 
